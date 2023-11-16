@@ -10,10 +10,12 @@
     "dev:ssr": "ng run shell:serve-ssr",
     "serve:ssr": "node dist/shell/server/main.js",
     "build:ssr": "ng build && ng run shell:server",
-    "prerender": "ng run shell:prerender"
+    "prerender": "ng run shell:prerender",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
+    "@angular-architects/module-federation": "^16.0.4",
     "@angular/animations": "^16.2.0",
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
@@ -43,6 +45,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ngx-build-plus": "^16.0.0",
     "typescript": "~5.1.3"
   }
 }
