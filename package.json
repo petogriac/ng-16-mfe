@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run remote:serve-ssr",
-    "serve:ssr": "node dist/remote/server/main.js",
-    "build:ssr": "ng build && ng run remote:server",
-    "prerender": "ng run remote:prerender"
+    "dev:ssr": "ng run shell:serve-ssr",
+    "serve:ssr": "node dist/shell/server/main.js",
+    "build:ssr": "ng build && ng run shell:server",
+    "prerender": "ng run shell:prerender"
   },
   "private": true,
   "dependencies": {
